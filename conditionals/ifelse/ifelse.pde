@@ -1,23 +1,25 @@
-/** Condicionales. Condicional completa
- * Se puede ejecutar código en caso que la condición no se cumpla.
+/* Condicionales. Condicional completa.
+ * En caso de ser necesario, podemos ejecutar codigo cuando la
+ * condicion NO se cumpla. Para eso ocupamos la palabra else.
+ *
+ * if (condicion) {
+ *    // Codigo que se ejecuta cuando SI es verdad
+ * } else {
+ *    // Codigo que se ejecuta cuando NO es verdad
+ * }
  */
- 
-// Condicion <=> expresion booleana
-// Expresion booleana <=> 
 
-// Sintaxis condicional completa
-// if ( condicion ) {
-//   codigo que se ejecuta si la condicion es verdadera
-//   ...
-// } else {
-//   codigo que se ejecuta si la condicion es falsa
-//   ...
-// }
+void setup () {
+  size(500, 500);
+}
 
-int myAge = 20;
-boolean allowToDrink = myAge > 17;
-if ( allowToDrink ) {
-  println( "A la fiesta!" );
-} else {
-  println( "Puro frutsi" );
+void draw () {
+  background(255);
+  
+  stroke(0);
+  line(250, 0, 250, height);
+  
+  noStroke();
+  
+  // Aqui pon la logica
 }
